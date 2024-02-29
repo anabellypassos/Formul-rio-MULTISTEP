@@ -1,0 +1,50 @@
+.form-control.score-container{
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+
+}
+.score-container svg{
+font-size: 1.6rem;
+cursor:pointer;
+transition: 0.3s;
+}
+
+.score-container svg:hover{
+fill:#7076f4
+}
+.score-container input:checked ~ svg {
+    fill:#7076f4;
+}
+.radio-container{
+text-align: center;
+position:relative;
+
+}
+
+.readio-container input{
+    opacity: 0;
+    position: absolute;
+}
+.score-container input :checked ~ svg{
+fill: #7076f4;
+}
+
+.radio-container{
+    text-align: center;
+    position: relative;
+
+}
+.readio-container{
+    opacity: 0;
+    position: absolute;
+    top:15px;
+
+}
+.radio-container p{
+font-size:italic;
+font-weight:300 ;
+font-size: 0.7rem;
+margin-top: 0.4rem;
+
+}
