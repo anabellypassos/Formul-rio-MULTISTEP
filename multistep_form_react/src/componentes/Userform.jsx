@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Userform = ({data,updateFieldHandler}) => {
+const Userform = ({data, updateFieldHandler}) => {
   return (
     <div>
     <div className='form-control'>

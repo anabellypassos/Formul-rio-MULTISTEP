@@ -5,8 +5,9 @@ import {
   BsFillEmojiHeartEyesFill,
   BsFillEmojiNeutralFill
 }from 'react-icons/bs'
+
 import "../componentes/ReviewForm.css";
-const ReviewForm = ({data,updateFieldHandler}) => {
+const ReviewForm = ({data, updateFieldHandler}) => {
   return (
     <div className="review-form">
 <div className="form-control score-container">
@@ -33,7 +34,7 @@ onChange={(e) => updateFieldHandler("review", e.target.value)}required
 
 <label className='radio-container'>
 
-<input type="radio" value="very_satisfied" name="review"checked={data.review === "satisfied "}
+<input type="radio" value="satisfied " name="review" checked={data.review === "satisfied "}
 onChange={(e) => updateFieldHandler("review", e.target.value)}required/>
 <BsFillEmojiSmileFill/>
 <p>Satisfeito</p>
@@ -41,7 +42,9 @@ onChange={(e) => updateFieldHandler("review", e.target.value)}required/>
 
 <label className='radio-container'>
 
-<input type="radio" value="very_satisfied" name="review" required/>
+<input type="radio" value="very_satisfied" name="review" checked={data.review === "very_satisfied "}
+onChange={(e) => updateFieldHandler("review", e.target.value)}required />
+
 <BsFillEmojiHeartEyesFill/>
 <p>Muito Satisfeito</p>
 </label>
